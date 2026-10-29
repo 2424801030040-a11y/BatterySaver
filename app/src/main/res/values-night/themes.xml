@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.BatterySaver" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/green_light</item>
+        <item name="colorSecondary">@color/green_primary</item>
+        <item name="colorSurface">#111A13</item>
+        <item name="colorSurfaceVariant">#202B22</item>
+        <item name="colorOnSurface">#E3F1E5</item>
+        <item name="colorOnSurfaceVariant">#B7C9B9</item>
+        <item name="colorOutlineVariant">#354638</item>
+    </style>
+</resources>

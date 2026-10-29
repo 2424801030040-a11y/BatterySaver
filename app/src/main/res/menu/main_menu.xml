@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/menu_settings"
+        app:showAsAction="never" />
+
+    <!-- Submenu -->
+    <item
+        android:id="@+id/action_theme"
+        android:title="@string/menu_theme"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/theme_light" android:title="@string/theme_light" />
+            <item android:id="@+id/theme_dark" android:title="@string/theme_dark" />
+            <item android:id="@+id/theme_system" android:title="@string/theme_system" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+</menu>
