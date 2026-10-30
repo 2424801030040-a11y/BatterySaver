@@ -105,6 +105,26 @@
                         android:text="@string/battery_info_loading"
                         android:textColor="?attr/colorOnSurfaceVariant"
                         android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/tvEstimate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:text="@string/estimate_learning" />
+                    <TextView
+                        android:id="@+id/tvThermalAlert"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:textColor="#B3261E"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -156,6 +176,13 @@
                     android:layout_weight="1"
                     android:text="@string/analyze_usage" />
             </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBatteryReport"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/battery_report" />
         </LinearLayout>
     </ScrollView>
 

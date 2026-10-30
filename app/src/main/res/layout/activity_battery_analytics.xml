@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/battery_report_title"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/battery_report_subtitle"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="14sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            app:strokeColor="?attr/colorOutlineVariant"
+            app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/charge_coach_title" android:textColor="?attr/colorOnSurface" android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:id="@+id/chargeCoachStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textColor="?attr/colorOnSurfaceVariant" />
+                <TextView android:id="@+id/chargeTo80" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+                <TextView android:id="@+id/chargeTo100" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="14dp" android:background="?attr/colorOutlineVariant" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/drain_insight_title" android:textColor="?attr/colorOnSurface" android:textStyle="bold" />
+                <TextView android:id="@+id/drainInsight" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textColor="?attr/colorOnSurfaceVariant" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            app:strokeColor="?attr/colorOutlineVariant"
+            app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/metric_discharge_rate" android:textColor="?attr/colorOnSurfaceVariant" />
+                <TextView android:id="@+id/dischargeRate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:textColor="?attr/colorOnSurface" android:textSize="22sp" android:textStyle="bold" />
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/metric_charge_rate" android:textColor="?attr/colorOnSurfaceVariant" />
+                <TextView android:id="@+id/chargeRate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:textColor="?attr/colorOnSurface" android:textSize="22sp" android:textStyle="bold" />
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/metric_equivalent_cycles" android:textColor="?attr/colorOnSurfaceVariant" />
+                <TextView android:id="@+id/equivalentCycles" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:textColor="?attr/colorOnSurface" android:textSize="22sp" android:textStyle="bold" />
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/metric_max_temperature" android:textColor="?attr/colorOnSurfaceVariant" />
+                <TextView android:id="@+id/maxTemperature" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:textColor="?attr/colorOnSurface" android:textSize="22sp" android:textStyle="bold" />
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/metric_high_temperature_samples" android:textColor="?attr/colorOnSurfaceVariant" />
+                <TextView android:id="@+id/highTemperatureSamples" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:textColor="?attr/colorOnSurface" android:textSize="22sp" android:textStyle="bold" />
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/metric_charging_sessions" android:textColor="?attr/colorOnSurfaceVariant" />
+                <TextView android:id="@+id/chargingSessions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:textColor="?attr/colorOnSurface" android:textSize="22sp" android:textStyle="bold" />
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/metric_sample_count" android:textColor="?attr/colorOnSurfaceVariant" />
+                <TextView android:id="@+id/sampleCount" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="?attr/colorOnSurface" android:textSize="22sp" android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:id="@+id/reportHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>

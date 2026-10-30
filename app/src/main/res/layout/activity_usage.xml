@@ -33,6 +33,30 @@
                 <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_usage_title" android:textColor="?attr/colorOnSurface" android:textSize="18sp" android:textStyle="bold" />
                 <TextView android:id="@+id/usageHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textColor="?attr/colorOnSurfaceVariant" android:textSize="14sp" />
                 <com.google.android.material.button.MaterialButton android:id="@+id/grantUsageAccess" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/grant_usage_access" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:cardCornerRadius="20dp" app:cardElevation="1dp" app:strokeColor="?attr/colorOutlineVariant" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/weekday_chart_title" android:textColor="?attr/colorOnSurface" android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/weekday_chart_subtitle" android:textColor="?attr/colorOnSurfaceVariant" android:textSize="14sp" />
+                <com.example.batterysaver.UsageChartView android:id="@+id/weekdayChart" android:layout_width="match_parent" android:layout_height="190dp" android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:cardCornerRadius="20dp" app:cardElevation="1dp" app:strokeColor="?attr/colorOutlineVariant" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/week_chart_title" android:textColor="?attr/colorOnSurface" android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:id="@+id/weekComparisonHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="?attr/colorOnSurfaceVariant" android:textSize="14sp" />
+                <com.example.batterysaver.UsageChartView android:id="@+id/weekChart" android:layout_width="match_parent" android:layout_height="190dp" android:layout_marginTop="12dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:cardCornerRadius="20dp" app:cardElevation="1dp" app:strokeColor="?attr/colorOutlineVariant" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/top_apps_title" android:textColor="?attr/colorOnSurface" android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/battery_attribution_note" android:textColor="?attr/colorOnSurfaceVariant" android:textSize="14sp" />
+                <com.example.batterysaver.UsageChartView android:id="@+id/appChart" android:layout_width="match_parent" android:layout_height="220dp" android:layout_marginTop="12dp" />
                 <LinearLayout android:id="@+id/appUsageList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:orientation="vertical" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>

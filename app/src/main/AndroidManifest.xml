@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
@@ -35,6 +43,12 @@
             android:name=".UsageActivity"
             android:exported="false"
             android:label="@string/usage_title"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".BatteryAnalyticsActivity"
+            android:exported="false"
+            android:label="@string/battery_report_title"
             android:parentActivityName=".MainActivity" />
     </application>
 </manifest>

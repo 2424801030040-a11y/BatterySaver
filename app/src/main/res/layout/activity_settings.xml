@@ -31,5 +31,50 @@
                 <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swNotify" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:checked="true" android:text="@string/enable_alerts" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            app:strokeColor="?attr/colorOutlineVariant"
+            app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mode_settings_title" android:textColor="?attr/colorOnSurface" android:textSize="18sp" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/mode_settings_description" android:textColor="?attr/colorOnSurfaceVariant" android:textSize="14sp" />
+                <TextView android:id="@+id/tvSaverBrightness" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+                <com.google.android.material.slider.Slider android:id="@+id/sliderSaverBrightness" android:layout_width="match_parent" android:layout_height="wrap_content" android:valueFrom="25" android:valueTo="80" android:stepSize="5" android:value="55" />
+                <TextView android:id="@+id/tvUltraBrightness" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+                <com.google.android.material.slider.Slider android:id="@+id/sliderUltraBrightness" android:layout_width="match_parent" android:layout_height="wrap_content" android:valueFrom="5" android:valueTo="40" android:stepSize="5" android:value="25" />
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="12dp" android:background="?attr/colorOutlineVariant" />
+                <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swAutoSaver" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/auto_saver_title" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/auto_saver_description" android:textColor="?attr/colorOnSurfaceVariant" android:textSize="14sp" />
+                <TextView android:id="@+id/tvAutoSaverThreshold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+                <com.google.android.material.slider.Slider android:id="@+id/sliderAutoSaverThreshold" android:layout_width="match_parent" android:layout_height="wrap_content" android:valueFrom="5" android:valueTo="50" android:stepSize="5" android:value="20" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="1dp"
+            app:strokeColor="?attr/colorOutlineVariant"
+            app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/safety_coach_title" android:textColor="?attr/colorOnSurface" android:textSize="18sp" android:textStyle="bold" />
+                <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swThermalAlerts" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/thermal_alerts_title" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/thermal_alerts_description" android:textColor="?attr/colorOnSurfaceVariant" android:textSize="14sp" />
+                <TextView android:id="@+id/tvThermalThreshold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+                <com.google.android.material.slider.Slider android:id="@+id/sliderThermalThreshold" android:layout_width="match_parent" android:layout_height="wrap_content" android:valueFrom="38" android:valueTo="50" android:stepSize="1" android:value="42" />
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp" android:background="?attr/colorOutlineVariant" />
+                <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/swChargeAlert" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/charge_alert_title" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/charge_alert_description" android:textColor="?attr/colorOnSurfaceVariant" android:textSize="14sp" />
+                <TextView android:id="@+id/tvChargeTarget" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="?attr/colorPrimary" android:textStyle="bold" />
+                <com.google.android.material.slider.Slider android:id="@+id/sliderChargeTarget" android:layout_width="match_parent" android:layout_height="wrap_content" android:valueFrom="80" android:valueTo="100" android:stepSize="5" android:value="80" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 </ScrollView>

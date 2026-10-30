@@ -13,6 +13,11 @@
     </item>
 
     <item
+        android:id="@+id/action_export"
+        android:title="@string/export_history"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_clear"
         android:title="@string/clear_all"
         app:showAsAction="never" />
